@@ -4,9 +4,6 @@ import axios from 'axios'
 
 function ComA() {
     const [num, setNum] = useState();
-    const [name , setName] = useState();
-    const [weight , setWeight] = useState();
-
     const handleThat = (event) => {
         setNum(event.target.value)
     }
@@ -14,8 +11,8 @@ function ComA() {
     useEffect(() => {
       async function getData(){
           const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${num}`);
-          setName(res.data.name)
-          setWeight(res.data.weight)
+          console.log(res.data.name)
+          console.log(res.data.weight)
       }
     getData();
     })

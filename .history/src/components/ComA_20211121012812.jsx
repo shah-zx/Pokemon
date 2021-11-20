@@ -14,8 +14,8 @@ function ComA() {
     useEffect(() => {
       async function getData(){
           const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${num}`);
-          setName(res.data.name)
-          setWeight(res.data.weight)
+          console.log(res.data.name)
+          console.log(res.data.weight)
       }
     getData();
     })

@@ -4,9 +4,6 @@ import axios from 'axios'
 
 function ComA() {
     const [num, setNum] = useState();
-    const [name , setName] = useState();
-    const [weight , setWeight] = useState();
-
     const handleThat = (event) => {
         setNum(event.target.value)
     }
@@ -14,16 +11,14 @@ function ComA() {
     useEffect(() => {
       async function getData(){
           const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${num}`);
-          setName(res.data.name)
-          setWeight(res.data.weight)
+          console.log(res.data.name)
+          console.log(res.data.weight)
       }
     getData();
     })
     return (
         <>
             <h1> You have choosen {num} </h1>
-            <h1> Hello my name is : {name}</h1>
-            <h1>My weigth is {weight} 🤪</h1>
             <select
                 value={num}
                 onChange={handleThat}>
