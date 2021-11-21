@@ -14,8 +14,8 @@ code {
 
 .menu_style{
 width: 100%;
-line-height: 40px;
+line-height: 60px;
 background-color: greenyellow;
 display: flex;
-justify-content: space-evenly;
+justify-content: space-around;
 }

@@ -14,10 +14,10 @@ function App() {
     <BrowserRouter>
       <Navbar />
        <Routes>
-         <Route path = "/" element ={<ComA/>} />
-         <Route path = "/about" element = {()=> <About name = "about" />} />
-         <Route path = "/contact" element = {()=> <Contact name = 'Contact'/>} />
-         <Route path = "/contact/Name" element = {<Name/>} />
+         <Route path = "/" component = {<ComA/>} />
+         <Route exact path = "/about" render = {()=> <About name = 'About'/>} />
+         <Route path = "/contact" render = {()=> <Contact name = 'Contact'/>} />
+         <Route path = "/contact/Name" render = {<Name/>} />
        </Routes>
     </BrowserRouter>
   );

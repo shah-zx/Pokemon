@@ -14,8 +14,8 @@ function App() {
     <BrowserRouter>
       <Navbar />
        <Routes>
-         <Route path = "/" element ={<ComA/>} />
-         <Route path = "/about" element = {()=> <About name = "about" />} />
+         <Route path = "/" component = {<ComA/>} />
+         <Route path = "/about" element = {()=> <About name = 'About'/>} />
          <Route path = "/contact" element = {()=> <Contact name = 'Contact'/>} />
          <Route path = "/contact/Name" element = {<Name/>} />
        </Routes>
