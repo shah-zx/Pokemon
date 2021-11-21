@@ -4,9 +4,9 @@ import {useNavigate} from "react-router-dom"
 function User() {
     const { name, lname } = useParams();
     const location = useLocation();
-    const history = useNavigate();
+    const history = useHistory();
     const handleThat = () => {
-          history(-1)
+          alert("You are awesome")
     }
     console.log(history)
     return (

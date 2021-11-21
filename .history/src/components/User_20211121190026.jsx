@@ -6,7 +6,7 @@ function User() {
     const location = useLocation();
     const history = useNavigate();
     const handleThat = () => {
-          history(-1)
+          alert("You are awesome")
     }
     console.log(history)
     return (

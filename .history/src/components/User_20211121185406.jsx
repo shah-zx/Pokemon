@@ -1,14 +1,13 @@
 import React from 'react'
-import { useParams, useLocation  } from "react-router-dom"
-import {useNavigate} from "react-router-dom"
+import { useParams, useLocation , useHistory } from "react-router-dom"
+
 function User() {
     const { name, lname } = useParams();
     const location = useLocation();
-    const history = useNavigate();
     const handleThat = () => {
-          history(-1)
+          alert("You are awesome")
     }
-    console.log(history)
+    console.log(location)
     return (
         <>
             <h1>User {name}, {lname} page</h1>

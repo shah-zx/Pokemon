@@ -6,7 +6,7 @@ function User() {
     const location = useLocation();
     const history = useNavigate();
     const handleThat = () => {
-          history(-1)
+          alert("You are awesome")
     }
     console.log(history)
     return (
@@ -14,7 +14,7 @@ function User() {
             <h1>User {name}, {lname} page</h1>
             <p>My current location is {location.pathname}</p>
             {location.pathname === `/user/shahnawaz/sayyed`? (
-            <button onClick = {handleThat}>Click me</button>
+            <button onClick = {()=> history.}>Click me</button>
             ) : null}
         </>
         )
