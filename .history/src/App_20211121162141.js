@@ -17,8 +17,7 @@ function App() {
          <Route path = "/" element ={<ComA/>} />
          <Route path = "/about" element = {<About name = "about" section = "only one"/>} />
          <Route path = "/contact" element = {<Contact name = 'Contact'/>} />
-         <Route path = "/user/:name/:lname" element = {<User/>} />
-         <Route path = "/user" element = {<User/>} />
+         <Route path = "/user/:name" element = {<User/>} />
          <Route path = "/contact/Name" element = {<Name/>} />
        </Routes>
     </BrowserRouter>
