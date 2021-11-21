@@ -1,3 +1,4 @@
+import logo from './logo.svg';
 import './App.css';
 import ComA from './components/ComA';
 import Contact from './components/Contact';
@@ -13,10 +14,10 @@ function App() {
     <BrowserRouter>
       <Navbar />
        <Routes>
-         <Route path = "/" element ={<ComA/>} />
-         <Route path = "/about" element = {<About name = "about" section = "only one"/>} />
-         <Route path = "/contact" element = {<Contact name = 'Contact'/>} />
-         <Route path = "/contact/Name" element = {<Name/>} />
+         <Route path = "/" render ={<ComA/>} />
+         <Route path = "/about" render = {<About name = "about" />} />
+         <Route path = "/contact" render = {<Contact name = 'Contact'/>} />
+         <Route path = "/contact/Name" render = {<Name/>} />
        </Routes>
     </BrowserRouter>
   );

@@ -14,7 +14,7 @@ function App() {
       <Navbar />
        <Routes>
          <Route path = "/" element ={<ComA/>} />
-         <Route path = "/about" element = {<About name = "about" section = "only one"/>} />
+         <Route path = "/about" element = {<About name = "about" />} />
          <Route path = "/contact" element = {<Contact name = 'Contact'/>} />
          <Route path = "/contact/Name" element = {<Name/>} />
        </Routes>
