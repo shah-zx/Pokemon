@@ -5,7 +5,7 @@ function User() {
     const { name, lname } = useParams();
     const location = useLocation();
     const handleThat = () => {
-          alert("You are awesome")
+          console.log("Hello!");
     }
     console.log(location)
     return (
