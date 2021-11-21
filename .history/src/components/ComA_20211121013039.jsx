@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState , useEffect } from 'react'
 import axios from 'axios'
 
 
 function ComA() {
     const [num, setNum] = useState();
-    const [name, setName] = useState();
-    const [weight, setWeight] = useState();
+    const [name , setName] = useState();
+    const [weight , setWeight] = useState();
 
     const handleThat = (event) => {
         setNum(event.target.value)
     }
 
     useEffect(() => {
-        async function getData() {
-            const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${num}`);
-            setName(res.data.name)
-            setWeight(res.data.weight)
-        }
-        getData();
+      async function getData(){
+          const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${num}`);
+          setName(res.data.name)
+          setWeight(res.data.weight)
+      }
+    getData();
     })
     return (
         <>
@@ -28,10 +28,10 @@ function ComA() {
                 value={num}
                 onChange={handleThat}>
                 <option value="1">1</option>
-                <option value="500">500</option>
-                <option value="3">10</option>
-                <option value="4">15</option>
-                <option value="5">20</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </>
     )
