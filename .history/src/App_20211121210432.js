@@ -6,7 +6,6 @@ import {Routes , Route} from "react-router-dom";
 import About from './components/About';
 import Navbar from './components/Navbar';
 import User from './components/User';
-import Search from './components/Search';
 function App() {
   const Name = () => {
     return <h1> This is the name page </h1>

@@ -8,7 +8,7 @@ function Navbar() {
         <Link activeClassName = "active_class" to = "/about">About</Link>
         <Link activeClassName = "active_class" to = "/contact">Contact us</Link>
         <Link activeClassName = "active_class" to = "/user">User</Link>
-        <Link activeClassName = "active_class" to = "/search">Search</Link>
+        <Link activeClassName = "active_class" to = "/user">Search</Link>
         </div>
         </>
     )
